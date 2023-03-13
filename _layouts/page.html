@@ -2,12 +2,13 @@
 layout: default
 ---
 
-<div class="post-container">
-	<div class="post-list">
-		<span class="post-title">{{page.title}}</span>
-	</div>
-</div>
-<div class="blog-post-content">
-	<h1>{{page.title}}</h1>
-	{{ content }}
-</div>
+{% if page.title %}
+  <h1 id="{{ page.id }}" data-level="1.1" class="no_toc">{{ page.title | escape }}</h1>
+{% endif %}
+{% if page.subtitle %}
+  <div class="page-subtitle">{{ page.subtitle | escape }}</div>
+{% endif %}
+
+<section class="normal markdown-section">
+  {{ content }}
+</section>

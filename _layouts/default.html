@@ -1,12 +1,110 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-  {% include head.html %}
+  <head>
+    {% include build-chapter-nav.html %}
+
+    {%- include head.html -%}
+
+    {% if page_prev_chapter %}
+      <link rel="prev" href="{{site.baseurl}}{{page_prev_chapter.url}}" />
+    {% else %}
+      <link rel="prev" href="{{site.baseurl}}/" />
+    {% endif %}
+
+    {% if page_next_chapter %}
+      <link rel="next" href="{{site.baseurl}}{{page_next_chapter.url}}" />
+    {% endif %}
+
+  </head>
   <body>
-    {{ content }}
-    <div class="top" title="Top">
-      <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="angle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-angle-up fa-w-8 fa-2x"><path fill="currentColor" d="M136.5 185.1l116 117.8c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L128 224.7 27.6 326.9c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17l116-117.8c4.7-4.6 12.3-4.6 17 .1z" class=""></path></svg>
+    <div class="book">
+
+      {{ chapter-nav }}
+
+      <div class="book-body">
+        <div class="book-header" role="navigation">
+          {% if site.github_edit.enabled %}
+            <a
+              href="{{ site.github_edit.base_url }}{{ page.path }}"
+              target="_blank"
+              title="Edit on GitHub"
+              class="github-edit-link">
+              <i class="fa fa-github"></i>
+            </a>
+          {% endif %}
+          <h1>
+            <a href="{{site.baseurl}}/">{{ site.title | escape }}</a>
+          </h1>
+        </div>
+        <!-- .book-header -->
+
+        <div class="body-inner">
+          <div
+            class="page-wrapper"
+            tabindex="-1"
+            role="main">
+            <div class="page-inner {% if page.class %}{{ page.class }}{% endif %}">
+
+              {{ content }}
+
+            </div>
+            <!-- .page-inner -->
+          </div>
+          <!-- .page-wrapper -->
+        </div>
+        <!-- .body-inner -->
+        <div class="page-footer">
+          {% if site.bottom_nav %}
+            <div class="bottom-nav">
+              {% for item in site.bottom_nav %}
+                {% unless forloop.first %}
+                  -
+                {% endunless %}
+                {% assign item_url = item.url %}
+                {% assign starts_with = item_url | slice: 0, 4 %}
+                {% if starts_with != "http" %}
+                  {% assign item_url = item_url | prepend: site.baseurl %}{% endif %}
+                <a href="{{ item_url }}">
+                  {{ item.label }}
+                </a>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {% if site.copyright %}
+            <div class="copyright">
+              {% assign latest_year = "now" | date: "%Y" %}
+              {% capture copyright_start_year %}
+                {{ site.copyright.start_year }}{% endcapture %}
+              {% if site.copyright.link_slug %}
+                <a href="{{ site.baseurl }}/{{ site.copyright.link_slug }}">
+                {% endif %}
+                &copy;
+                {% if copyright_start_year and copyright_start_year != latest_year %}
+                  {{ copyright_start_year }}-{% endif %}
+                {{ latest_year }}
+                {{ site.author }}
+                {% if site.copyright.link_slug %}
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
+
+        </div>
+        <!-- .chapter-footer -->
+
+      </div>
+      <!-- .book-body -->
     </div>
-    {% include javascripts.html %}
-    {% include analytics.html %}
+    <!-- .book -->
+
+    {%- include footer.html -%}
+
+    <script>
+      // var gitbook = gitbook || [];
+      gitbook.push(function() {
+        gitbook.page.hasChanged({%- include gitbook-metadata.json.tpl -%});
+      });
+    </script>
   </body>
 </html>

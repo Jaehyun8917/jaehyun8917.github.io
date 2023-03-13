@@ -1,370 +1,470 @@
-demo site now [mirrored](https://weathered-bread-8229.on.fleek.co/) in [IPFS](https://github.com/ipfs/ipfs#quick-summary)!
-
-# Jekyll theme: Adam Blog 2.0
-by [Armando Maynez](https://github.com/amaynez) based on [V1.0](https://github.com/artemsheludko/adam-blog) by [Artem Sheludko](https://github.com/artemsheludko). 
-
-Adam Blog 2.0 is a Jekyll theme that was built to be 100% compatible with [GitHub Pages](https://pages.github.com/). If you are unfamiliar with GitHub Pages, you can check out [their documentation](https://help.github.com/categories/github-pages-basics/) for more information. [Jonathan McGlone's guide](http://jmcglone.com/guides/github-pages/) on creating and hosting a personal site on GitHub is also a good resource.
-
-### What is Jekyll?
-
-Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. Basically, Jekyll takes your page content along with template files and produces a complete website. For more information, visit the [official Jekyll site](https://jekyllrb.com/docs/home/) for their documentation. Codecademy also offers a great course on [how to deploy a Jekyll site](https://www.codecademy.com/learn/deploy-a-website) for complete beginners.
-
-### Never Used Jekyll Before?
-
-The beauty of hosting your website on GitHub is that you don't have to actually have Jekyll installed on your computer. Everything can be done through the GitHub code editor, with minimal knowledge of how to use Jekyll or the command line. All you have to do is add your posts to the `_posts` directory and edit the `_config.yml` file to change the site settings. With some rudimentary knowledge of HTML and CSS, you can even modify the site to your liking. This can all be done through the GitHub code editor, which acts like a content management system (CMS).
-
-## Features of v2.0:
-- SEO meta tags
-- Dark mode ([configurable in _config.yml file](https://github.com/the-mvm/the-mvm.github.io/blob/a8d4f781bfbc4107b4842433701d28f5bbf1c520/_config.yml#L10))
-- automatic [sitemap.xml](http://the-mvm.github.io/sitemap.xml)
-- automatic [archive page](http://the-mvm.github.io/archive/) with infinite scrolling capability
-- [new page](https://the-mvm.github.io/tag/?tag=Coding) of posts filtered by a single tag (without needing autopages from paginator V2), also with infinite scrolling
-- click to tweet functionality (just add a `<tweet> </tweet>` tag in your markdown.
-- custom and responsive [404 page](https://the-mvm.github.io/404.html)
-- responsive and automatic Table of Contents (optional per post)
-- read time per post automatically calculated
-- responsive post tags and social share icons (sticky or inline)
-- included linkedin, reddit and bandcamp icons
-- *copy link to clipboard* sharing option (and icon)
-- view on github link button (optional per post)
-- MathJax support (optional per post)
-- tag cloud in the home page
-- 'back to top' button
-- comments 'courtain' to mask the disqus interface until the user clicks on it ([configurable in _config.yml](https://github.com/the-mvm/the-mvm.github.io/blob/d4a67258912e411b639bf5acd470441c4c219544/_config.yml#L13))
-- [CSS variables](https://github.com/the-mvm/the-mvm.github.io/blob/d4a67258912e411b639bf5acd470441c4c219544/assets/css/main.css#L8) to make it easy to customize all colors and fonts
-- added several themes for code syntax highlight [configurable from the _config.yml file](https://github.com/the-mvm/the-mvm.github.io/blob/e146070e9348c2e8f46cb90e3f0c6eb7b59c041a/_config.yml#L44).
-- responsive footer menu and footer logo ([if setup in the config file](https://github.com/the-mvm/the-mvm.github.io/blob/d4a67258912e411b639bf5acd470441c4c219544/_config.yml#L7))
-- search shows results based on full post content, not just the description
-- smoother menu animations 
-
-## Features preserved from v1.0
-- [Google Fonts](https://fonts.google.com/)
-- [Font Awesome icons](http://fontawesome.io/)
-- [Disqus](https://disqus.com/)
-- [MailChimp](https://mailchimp.com/)
-- [Analytics](https://analytics.google.com/analytics/web/)
-- [Search](https://github.com/christian-fei/Simple-Jekyll-Search)
-
-## Demo
-
-[Check the theme in action](https://the-mvm.github.io/)
-
-The main page looks like this:
-
-<img width="640px" src="https://github.com/the-mvm/the-mvm.github.io/blob/main/assets/img/template_screenshots/homepage-responsive.jpg?raw=true">
-
-Dark mode selector in main menu:
-
-<img width="560px" src="https://github.com/the-mvm/the-mvm.github.io/blob/main/assets/img/template_screenshots/light-toggle.png?raw=true">
-
-The post page looks like:
-
-<img width="540px" src="https://github.com/the-mvm/the-mvm.github.io/blob/main/assets/img/template_screenshots/post.jpg?raw=true">
-<img width="540px" src="https://github.com/the-mvm/the-mvm.github.io/blob/main/assets/img/template_screenshots/post_bottom.jpg?raw=true">
-
-Custom responsive 404:
-
-<img width="640px" src="https://github.com/the-mvm/the-mvm.github.io/blob/main/assets/img/template_screenshots/404-responsive.jpg?raw=true">
-
-Dark mode looks like this:
-
-<img width="640px" src="https://github.com/the-mvm/the-mvm.github.io/blob/main/assets/img/template_screenshots/homepage-dark.png?raw=true">
-
-<img width="640px" src="https://github.com/the-mvm/the-mvm.github.io/blob/main/assets/img/template_screenshots/post-dark.png?raw=true">
-<img width="640px" src="https://github.com/the-mvm/the-mvm.github.io/blob/main/assets/img/template_screenshots/post_bottom-dark.png?raw=true">
-
-# Installation
-
-## Local Installation
-
-For a full local installation of Adam Blog 2.0, [download your own copy of Adam Blog 2.0](https://github.com/the-mvm/the-mvm.github.io/archive/refs/heads/main.zip) and unzip it into it's own directory. From there, open up your favorite command line tool, enter `bundle install`, and then enter `jekyll serve`. Your site should be up and running locally at [http://localhost:4000](http://localhost:4000).
-
-If you're completely new to Jekyll, I recommend checking out the documentation at <https://jekyllrb.com/> or there's a tutorial by [Smashing Magazine](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/).
-
-If you are hosting your site on GitHub Pages, then committing a change to the `_config.yml` file (or any other file) will force a rebuild of your site with Jekyll. Any changes made should be viewable soon after. If you are hosting your site locally, then you must run `jekyll serve` again for the changes to take place.
-
-Head over to the `_posts` directory to view all the posts that are currently on the website, and to see examples of what post files generally look like. You can simply just duplicate the template post and start adding your own content.
-
-## GitHub Pages Installation
-
-### **STEP 1.**
-[Fork this repository](https://github.com/the-mvm/the-mvm.github.io/fork/) into your own account.
-
-#### Using Github Pages
-
-You can host your Jekyll site for free with Github Pages. [Click here](https://pages.github.com/) for more information.
-
- When forking, if you use as destination a repository named ``USERNAME.github.io`` then your url will be ``https://USERNAME.github.io/``, else ``https://USERNAME.github.io/REPONAME/``) and your site will be published to the gh-pages branch. Note: if you are hosting several sites under the same GitHub username, then you will have to use [Project Pages instead of User Pages](https://help.github.com/articles/user-organization-and-project-pages/) - just change the repository name to something other than 'http://USERNAME.github.io'.
-
-##### A configuration tweak if you're using a gh-pages branch
-
-In addition to your github-username.github.io repo that maps to the root url, you can serve up sites by using a gh-pages branch for other repos so they're available at github-username.github.io/repo-name.
-
-This will require you to modify the `_config.yml` like so:
-
-```yml
-# Site settings
-title: Repo Name
-email: your_email@example.com
-author: Your Name
-description: "Repo description"
-baseurl: "/repo-name"
-url: "https://github-username.github.io"
-```
-
-This will ensure that the the correct relative path is constructed for your assets and posts.
-
-### **STEP 2.**
-Modify ``_config.yml`` file, located in the root directory, with your data.
-
-```YAML
-# Site settings
-title: The Title for Your Website
-description: 'A description of your blog'
-permalink: ':title:output_ext' # how the permalinks will behave
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-logo: "" # the logo for your site
-logo-icon: "" # a smaller logo, typically squared
-logo-icon-SEO: "" # must be a non SVG file, could be the same as the logo-icon
-
-# Night/Dark mode default mode is "auto", "auto" is for auto nightshift (19:00 - 07:00), "manual" is for manual toggle, and "on/off" is for default on/off. Whatever the user's choice is, it will supersede the default setting of the site and be kept during the visit (session). Only the dark mode setting is "manual", it will be always kept on every visit (i.e. no matter the browser is closed or not)
-night_mode: "auto"
-logo-dark: "/assets/img/branding/MVM-logo-full-dark.svg" #if you want to display a different logo when in dark mode
-highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code highlighter if needed
-
-
-# Author settings
-author: Your Name # add your name
-author-pic: '' # a picture of you
-about-author: '' # a brief description of you
-
-# Contact links
-email: your@email.com # Add your Email address
-phone: # Add your Phone number
-website:  # Add your website
-linkedin:  # Add your Linkedin handle
-github:  # Add your Github handle
-twitter:  # Add your Twitter handle
-bandcamp:  # Add your Bandcamp username
-
-# Tracker
-analytics: # Google Analytics tag ID
-fbadmin: # Facebook ID admin
-
-# Paginate
-paginate: 6 # number of items to show in the main page
-paginate_path: 'page:num'
-words_per_minute: 200 # default words per minute to be considered when calculating the read time of the blog posts
-```
-### **STEP 3.**
-To configure the newsletter, please create an account in https://mailchimp.com, set up a web signup form and paste the link from the embed signup form in the `config.yml` file:
-```YAML
-# Newsletter
-mailchimp: "https://github.us1.list-manage.com/subscribe/post?u=8ece198b3eb260e6838461a60&amp;id=397d90b5f4"
-```
-
-### **STEP 4.**
-To configure Disqus, set up a [Disqus site](https://disqus.com/admin/create/) with the same name as your site. Then, in `_config.yml`, edit the `disqus_identifier` value to enable.
-```YAML
-# Disqus
-discus_identifier:  # Add your discus identifier
-comments_curtain: yes # leave empty to show the disqus embed directly
-```
-More information on [how to set up Disqus](http://www.perfectlyrandom.org/2014/06/29/adding-disqus-to-your-jekyll-powered-github-pages/).
-
-### **STEP 5.**
-Customize the site colors. Modify `/assets/css/main.css` as follows:
-```CSS
-html {
-  --shadow:       rgba(32,30,30,.3);
-  --accent:       #DB504A;    /* accent */
-  --accent-dark:  #4e3e51;    /* accent 2 (dark) */
-  --main:         #326273;    /* main color */
-  --main-dim:     #879dab;    /* dimmed version of main color */
-  --text:         #201E1E;
-  --grey1:        #5F5E58;
-  --grey2:        #8D897C;
-  --grey3:        #B4B3A7;
-  --grey4:        #DAD7D2;
-  --grey5:        #F0EFED;
-  --background:   #ffffff;
-}
-
-html[data-theme="dark"]  {
-  --accent:       #d14c47;    /* accent */
-  --accent-dark:  #CD8A7A;    /* accent 2 (dark) */
-  --main:         #4C6567;    /* main color */
-  --main-dim:     #273335;    /* dimmed version of main color */
-  --text:         #B4B3A7;
-  --grey1:        #8D897C;
-  --grey2:        #827F73;
-  --grey3:        #76746A;
-  --grey4:        #66645D;
-  --grey5:        #4A4945;
-  --background:   #201E1E;
-  --shadow:       rgba(180,179,167,.3);
-}
-```
-### **STEP 6.**
-Customize the site fonts. Modify `/assets/css/main.css` as follows:
-```CSS
-...
-  --font1: 'Lora', charter, Georgia, Cambria, 'Times New Roman', Times, serif;/* body text */
-  --font2: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* headers and titles   */
-  --font1-light:      400;
-  --font1-regular:    400;
-  --font1-bold:       600;
-  --font2-light:      200;
-  --font2-regular:    400;
-  --font2-bold:       700;
-...
-```
-If you change the fonts, you need to also modify `/_includes/head.html` as follows:
-Uncomment and change the following line with your new fonts and font weights:
-```HTML
-<link href="https://fonts.googleapis.com/css?family=Lora:400,600|Source+Sans+Pro:200,400,700" rel="stylesheet">
-```
-Delete everything within `<style></style>` just before the line above:
-```HTML
-<style>
-/* latin */
-@font-face {
-  font-family: 'Lora';
-  ...
-</style>
-```
-
-### **STEP 7.**
-
-You will find example posts in your `/_posts/` directory. Go ahead and edit any post and re-build the site to see your changes, for github pages, this happens automatically with every commit. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention of `YYYY-MM-DD-name-of-post.md` and includes the necessary front matter. Take a look at any sample post to get an idea about how it works. If you already have a website built with Jekyll, simply copy over your posts to migrate to Adam Blog 2.0.
-
-The front matter options for each post are:
-```YAML
 ---
-layout: post #ensure this one stays like this
-read_time: true # calculate and show read time based on number of words
-show_date: true # show the date of the post
-title:  Your Blog Post Title
-date:   XXXX-XX-XX XX:XX:XX XXXX
-description: "The description of your blog post"
-img: # the path for the hero image, from the image folder (if the image is directly on the image folder, just the filename is needed)
-tags: [tags, of, your, post]
-author: Your Name
-github: username/reponame/ # set this to show a github button on the post
-toc: yes # leave empty or erase for no table of contents
+layout: home
+title: Jekyll Chapterbook Theme
+permalink: /
+---
+
+This is a [Jekyll](https://jekyllrb.com/) theme based on [GitBook](https://www.gitbook.com/) that adds support for easily organizing pages into book chapters and parts.
+It doesn't rely on any plugins,
+so it works natively with [GitHub Pages](https://pages.github.com/).
+
+This theme was originally based on Tao He’s clever and immensely helpful [jekyll-gitbook](https://github.com/sighingnow/jekyll-gitbook) theme, 
+which in turn is based on an early theme of [GitBook](https://www.gitbook.com/).
+
+## Demos
+
+### Demo on GitHub pages
+
+[jasongrimes.github.io/jekyll-chapterbook/](https://jasongrimes.github.io/jekyll-chapterbook/)
+
+Also see its 
+[GitHub repo](https://github.com/jasongrimes/jekyll-chapterbook).
+
+### Example live site
+
+A live site with a more complex configuration can be seen at 
+[fretboardfoundation.com](https://fretboardfoundation.com).
+
+Also see its 
+[GitHub repo](https://github.com/jasongrimes/fretboardfoundation).
+
+## Why this theme
+
+This theme is intended to help with gradually writing a book over a long period of time,
+starting from an idea and slowly building out chapters and parts.
+
+It was created with the following objectives:
+
+- Support all standard parts of a book, including front matter, back matter, chapters, parts, etc.
+- Support frequently reorganizing chapters and parts without breaking existing links.
+- Make the work in progress publicly available in a useful way, 
+  while making drafts that aren't ready for public consumption available without interrupting the flow of completed chapters.
+- Support quickly editing the book on-the-fly, especially from mobile.
+- Run natively on GitHub Pages without custom plugins.
+- Automatically number parts and chapters.
+- Make the markdown source files for each chapter  appear in order on the filesystem and on GitHub,
+  regardless of the chapter name, without having to manually renumber.
+  (This makes it easier to find the page you want to edit.)
+
+## Getting started
+
+### Install the theme
+
+Install this theme [like any other Jekyll theme](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll).
+For example, you could:
+- [Fork this repository](https://github.com/jasongrimes/jekyll-chapterbook/fork) and add your markdown pages to the `_chapters` folder.
+- Use it as a remote theme in your `_config.yml`,
+and then copy in the configuration from  [`jekyll-chapterbook/_config.yml`](https://github.com/jasongrimes/jekyll-chapterbook/blob/master/_config.yml).
+
+```yaml
+remote_theme: jasongrimes/jekyll-chapterbook
+```
+
+### Create some chapters
+
+Each chapter is written in its own [Jekyll page](https://jekyllrb.com/docs/pages/),
+and stored in the [`_chapters/`](https://github.com/jasongrimes/jekyll-chapterbook/tree/master/_chapters) directory.
+
+Name your chapters something like `010-my-chapter.md`, `020-my-next-chapter.md`, etc.
+(The numbers are used to list chapters in the desired order.
+More on that later.)
+
+Create chapters with the following front matter:
+
+```yaml
+---
+title: 
+slug:
+abstract:
 ---
 ```
-Edit your blogpost using markdown. [Here is a good guide about how to use it.](https://www.markdownguide.org/)
 
-### **STEP 7.**
-Delete images inside of ``/assets/img/posts/`` and upload your own images for your posts.
+- `title`: The chapter name / page title.
+- `slug`: Used to create the chapter URL and for internal links. Must be unique.
+- `abstract`: (Optional.) Shown at the top of a chapter and in the full table of contents.
 
-### **STEP 8.**
-Make sure Github Pages are turned on in the repository settings, and pointing to the main or master branch (where you cloned this repo).
+Chapters also support these other front matter variables,
+though they are less common.
 
-## Additional documentation
+- `published`: If `false`, the chapter will not be rendered and will not be included in the chapter numbering. 
+- `disable_toc`: If `true`, don't render the chapter's headings as a table of contents at the top of the page.
+- `class`: Optionally specify CSS class(es) to add to the `<div>` wrapping the page.
 
-### Directory Structure
+Here's the [markdown for an example chapter](https://raw.githubusercontent.com/jasongrimes/jekyll-chapterbook/master/_chapters/010-getting-started.md)
+and here is that [example chapter rendered in the demo](https://jasongrimes.github.io/jekyll-chapterbook/getting-started.html).
 
-If you are familiar with Jekyll, then the Adam Blog 2.0 directory structure shouldn't be too difficult to navigate. The following some highlights of the differences you might notice between the default directory structure. More information on what these folders and files do can be found in the [Jekyll documentation site](https://jekyllrb.com/docs/structure/).
+### Configure GitHub edit links
 
-```bash
-Adam Blog 2.0/
-├── _includes                  # Theme includes
-├── _layouts                   # Theme layouts (see below for details)
-├── _posts                     # Where all your posts will go
-├── assets                     # Style sheets and images are found here
-|  ├── css                     # Style sheets go here
-|  |  └── _sass                # Folder containing SCSS files
-|  |  └── main.css             # Main SCSS file
-|  |  └── highlighter          # Style sheet for code syntax highlighting
-|  └── img                     # 
-|     └── posts                # Images go here
-├── _pages                     # Website pages (that are not posts)
-├── _config.yml                # Site settings
-├── Gemfile                    # Ruby Gemfile for managing Jekyll plugins
-├── index.html                 # Home page
-├── LICENSE.md                 # License for this theme
-├── README.md                  # Includes all of the documentation for this theme
-├── feed.xml                   # Generates atom file which Jekyll points to
-├── 404.html                   # custom and responsive 404 page
-├── all-posts.json             # database of all posts used for infinite scroll
-├── ipfs-404.html              # 404 page for IPFS
-├── posts-by-tag.json          # database of posts by tag
-├── robots.txt                 # SEO crawlers exclusion file
-├── search.json                # database of posts used for search
-└── sitemap.xml                # automatically generated sitemap for search engines
+In the top navigation for every page,
+there's a link to edit that page on GitHub.
+This allows you to make quick edits while reviewing.
+Upon saving the edit form at GitHub,
+your GitHub Pages site can be automatically rebuilt and deployed.
+
+This even works reasonably well from a mobile device.
+The ability to review and edit from mobile is one of my favorite features of this theme.
+
+Configure the GitHub link to your own project in `github_edit` in [_config.yml](https://github.com/jasongrimes/jekyll-chapterbook/blob/master/_config.yml).
+
+```yaml
+github_edit:
+  enabled: true
+  base_url: https://github.com/jasongrimes/jekyll-chapterbook/edit/master/
 ```
 
-### Starting From Scratch
+[See the demo for an example.](https://jasongrimes.github.io/jekyll-chapterbook/)
 
-To completely start from scratch, simply delete all the files in the `_posts`, `assets/img/posts` folders, and add your own content. Everything in the `_config.yml` file can be edited to suit your needs. Also change the `favicon.ico` file to your own favicon.
+### Internal links
 
-### Click to tweet
+To help ensure internal links don't break in different environments,
+when linking to another page in markdown, 
+use the page's `slug` or `permalink`. 
+For example, to link to a page with `slug:toc`:
 
-If you have a tweetable quote in your blog post and wish to feature it as a click to tweet block, you just have to use the `<tweet></tweet>` tags, everything between them will be converted in a click to tweet box.
-
-<img width="640px" src="https://github.com/the-mvm/the-mvm.github.io/blob/main/assets/img/template_screenshots/ctt-markdown.png?raw=true">
-
-<img width="640px" src="https://github.com/the-mvm/the-mvm.github.io/blob/main/assets/img/template_screenshots/ctt-render.png?raw=true">
-
-### Google Analytics
-
-It is possible to track your site statistics through [Google Analytics](https://www.google.com/analytics/). Similar to Disqus, you will have to create an account for Google Analytics, and enter the correct Google ID for your site under `google-ID` in the `_config.yml` file. More information on [how to set up Google Analytics](https://michaelsoolee.com/google-analytics-jekyll/).
-
-### Atom Feed
-
-Atom is supported by default through [jekyll-feed](https://github.com/jekyll/jekyll-feed). With jekyll-feed, you can set configuration variables such as 'title', 'description', and 'author', in the `_config.yml` file.
-
-Your atom feed file will be live at `https://your.site/feed.xml` [example](https://the-mvm.github.io/feed.xml).
-
-### Social Media Icons
-
-All social media icons are courtesy of [Font Awesome](http://fontawesome.io/). You can change which icons appear, as well as the account that they link to, in the `_config.yml` file.
-
-### MathJax
-
-Adam Blog 2.0 comes out of the box with [MathJax](https://www.mathjax.org/), which allows you to display mathematical equations in your posts through the use of [LaTeX](http://www.andy-roberts.net/writing/latex/mathematics_1). Just add `Mathjax: yes` in the frontmatter of your post.
-
-```markdown
-<p style="text-align:center">
-\(\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t\).
-</p>
+{% raw %}
 ```
-![rendered mathjax](/assets/img/template_screenshots/MathjaxRendered.jpg)
-
-
-### Syntax Highlighting
-
-Adam Blog 2.0 provides syntax highlighting through [fenced code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/). Syntax highlighting allows you to display source code in different colors and fonts depending on what programming language is being displayed. You can find the full list of supported programming languages [here](https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers). Another option is to embed your code through [Gist](https://en.support.wordpress.com/gist/).
-
-You can choose the color theme for the syntax highlight in the `_config.yml` file:
-```YAML
-highlight_theme: syntax-base16.monokai.dark # select a theme for the code highlighter
+See the [table of contents](toc).
 ```
-See the [highlighter directory](https://github.com/the-mvm/the-mvm.github.io/tree/main/assets/css/highlighter) for reference on the options.
+{% endraw %}
 
-### Markdown
+To insert a link to a chapter,
+labeled with the chapter `title` and chapter number,
+use the `chapter-link.html` helper:
 
-Jekyll offers support for GitHub Flavored Markdown, which allows you to format your posts using the [Markdown syntax](https://guides.github.com/features/mastering-markdown/).
+For example:
 
-## Everything Else
+{% raw %}
+```
+See {% include chapter-link.html slug="variables" %}.
+```
+{% endraw %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+See an [example chapter link](https://jasongrimes.github.io/jekyll-chapterbook/helpers#chapter-links) in the demo.
 
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+## File organization
 
-## Contributing
+### Chapter file names
 
-If you would like to make a feature request, or report a bug or typo in the documentation, then please [submit a GitHub issue](https://github.com/the-mvm/the-mvm.github.io/issues/new). If you would like to make a contribution, then feel free to [submit a pull request](https://help.github.com/articles/about-pull-requests/) - as a bonus, I will credit all contributors below! If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
+Each chapter is written in its own [Jekyll page](https://jekyllrb.com/docs/pages/),
+and stored in the [`_chapters/`](https://github.com/jasongrimes/jekyll-chapterbook/tree/master/_chapters) directory.
 
-Adam Blog 2.0 has been designed as a base for users to customize and fit to their own unique needs. Please keep this in mind when requesting features and/or submitting pull requests. Some examples of changes that I would love to see are things that would make the site easier to use, or better ways of doing things. Please avoid changes that do not benefit the majority of users.
+The file name of a chapter is never shown in the book---chapters 
+are automatically numbered,
+and the chapter name and link comes from the front matter `title` and `slug`.
+The chapter file name is only used for determining the order of the chapters.
+It should begin with a number and a dash,
+so it appears in the correct order,
+plus a name that makes it easy for you to identify.
 
-## Questions?
+For example:
 
-This theme is completely free and open source software. You may use it however you want, as it is distributed under the [MIT License](http://choosealicense.com/licenses/mit/). If you are having any problems, any questions or suggestions, feel free to  [file a GitHub issue](https://github.com/the-mvm/the-mvm.github.io/issues/new).
+```
+_chapters/
+    010-intro.md
+    020-thesis.md
+    030-antithesis.md
+    040-conclusion.md
+```
+
+By using 3-digit numbers and incrementing them by 10 in this way,
+we can easily reorganize files without having to rename them all.
+For example,
+we could add a "synthesis" chapter between "30-antithesis" and "40-conclusion" by prefixing it with a number between 30 and 40. 
+
+```
+_chapters/
+    010-intro.md
+    020-thesis.md
+    030-antithesis.md
+    035-synthesis.md
+    040-conclusion.md
+```
+
+### Part directories
+
+Chapters can optionally be grouped into "Parts",
+by adding subdirectories to the `_chapters` directory,
+and moving the chapter files into them.
+Part directory names should begin with a number so they appear in the correct order,
+just like chapters.
+But unlike chapters, 
+the directory name (without the numeric prefix) is also shown in the book as the part name. 
+
+```
+_chapters/
+    010-thesis/
+        010-overview.md
+        020-blah-blah.md
+    020-antithesis/
+        010-underview.md
+        030-blather.md
+```
+
+### Special parts for book front and back matter
+
+Books typically include material at the front,
+like a table of contents and introduction,
+and material at the back,
+like a glossary or index.
+(In book publishing,
+this is called "front matter" and "back matter",
+not to be confused with the "front matter" variables in Jekyll pages).
+
+This front and back matter is not included in the rest of the book's chapter and page numbering,
+and it is never grouped into a "part",
+even when the other chapters are.
+
+To support this special material,
+there are two optional special part directories:
+`000-front/` and `999-back/`.
+Chapter pages stored in these special part directories appear before or after the other parts,
+and the chapters within them are not numbered.
+
+```
+_chapters/
+    000-front/
+        010-toc.md
+        015-preface.md
+        020-introduction.md
+    010-thesis/
+        010-overview.md
+        020-blah-blah.md
+    050-antithesis/
+        010-underview.md
+        030-not-blah.md
+    999-back/
+        010-references.md
+```
+
+The above would render as something like this:
+- Contents
+- Preface
+- Introduction
+- Part I: Thesis
+  - Chapter 1: Overview of my thesis
+  - Chapter 2: Blah, I say
+- Part II: Antithesis
+  - Chapter 3: Under the overview
+  - Chapter 4: Not blah, I retort
+- References
+
+See a live site with multiple parts and front and back matter at
+[fretboardfoundation.com/toc](https://fretboardfoundation.com/toc)
+and its [_chapters/](https://github.com/jasongrimes/fretboardfoundation/tree/main/_chapters) directory.
+
+### Drafts and outlines
+
+A chapter can be marked as a "draft" by renaming the file and adding `.draft` to the numeric prefix, like this:
+
+    010.draft-introduction.md
+
+Draft chapters are not listed in the table of contents,
+and they are not included in the chapter numberings.
+(To see in your dev environment how all the drafts _would_ be numbered if they weren't drafts,
+set `show_drafts_in_dev: true` in [_config.yml](https://github.com/jasongrimes/jekyll-chapterbook/blob/master/_config.yml).)
+
+But drafts _are_ listed in the book "outline".
+This enables a workflow in which you start with an outline of your book,
+made with empty draft chapters having just a `title` and maybe an `abstract`,
+ordered and grouped into parts as needed (and frequently reorganized).
+
+Then you can flesh out the chapters over time,
+and when ready,
+remove the `.draft` from the file name so it appears in the book.
+
+See an [example draft chapter](https://jasongrimes.github.io/jekyll-chapterbook/draft.html)
+and an [example outline](https://jasongrimes.github.io/jekyll-chapterbook/outline.html).
+
+## Non-book pages
+
+Your site will probably have other pages besides the contents of your book
+(like an about page, a home page, etc.).
+
+Create these like a regular Jekyll page and store them in the project root directory.
+In the page front matter,
+set `layout: page` and make sure to set the `title` and `permalink`.
+
+```yaml
+title: About this site
+permalink: /about
+layout: page
+```
+
+Then manually add links to your page using the permalink.
+
+Here's an [example of a non-book page](https://jasongrimes.github.io/jekyll-chapterbook/privacy.html).
+
+## Home page
+
+Create your site's home page at `/index.md`,
+and use `layout: home`.
+
+```yaml
+---
+layout: home
+title: Fretboard Foundation
+subtitle: Practical building-blocks for intermediate guitarists.
+---
+```
+
+If there is no `/index.md`,
+the `/README.md` will be used instead.
+
+## Navigation
+
+The book's automatically-generated table of contents is shown in the sidebar.
+
+To show additional links above the toc in the sidebar,
+define them in `sidebar_nav_top` in [_config.yml](https://github.com/jasongrimes/jekyll-chapterbook/blob/master/_config.yml).
+
+```yaml
+sidebar_nav_top:
+- label: About this site
+  url: /about
+```
+
+To show additional links at the bottom of the sidebar,
+define them in `sidebar_nav_bottom` in [_config.yml](https://github.com/jasongrimes/jekyll-chapterbook/blob/master/_config.yml).
+
+```yaml
+sidebar_nav_bottom:
+- label: Privacy statement
+  url: /privacy
+```
+
+To change the links shown at the bottom of every page,
+define them in `bottom_nav` in [_config.yml](https://github.com/jasongrimes/jekyll-chapterbook/blob/master/_config.yml).
+
+```yaml
+bottom_nav:
+- label: Home
+  url: /
+- label: Contents
+  url: /toc
+- label: About
+  url: /about
+- label: Privacy
+  url: /privacy
+```
+
+## Include "helpers"
+
+In order for this theme to work natively with GitHub pages,
+it can't use any custom Jekyll plugins.
+But it _can_ do any logic and data manipulation supported by the template language, Liquid.
+
+So this theme makes extensive use of Liquid templates to act as "helpers",
+by including them in a page and passing them parameters using Jekyll's standard [`include`](https://jekyllrb.com/docs/includes/) tag.
+
+See [helpers in the demo](https://jasongrimes.github.io/jekyll-chapterbook/helpers.html) for details.
+
+### Chapter links
+
+The `chapter-link.html` helper renders a link to the chapter with the specified `slug`,
+using its current title and chapter number.
+
+For example:
+{% raw %}
+```
+See {% include chapter-link.html slug="harmony-intro" %}.
+```
+{% endraw %}
+
+Parameters:
+- `slug`: Required. The `slug` of the chapter to link to.
+- `anchor`: An optional anchor tag to append to the chapter link.
+
+See an [example chapter link](https://jasongrimes.github.io/jekyll-chapterbook/helpers#chapter-links).
+
+### Tables of contents
+
+The `chapterbook-toc.html` helper allows you to make a table of contents page,
+including chapter abstracts (if any).
+
+Parameters:
+- `show_drafts`: If `true`, also show draft chapters. Useful for showing an "outline" view of the book.
+
+
+{% raw %}
+```liquid
+{% include chapterbook-toc.html %}
+```
+{% endraw %}
+
+See an [example table of contents](https://jasongrimes.github.io/jekyll-chapterbook/toc.html) 
+and [draft outline](https://jasongrimes.github.io/jekyll-chapterbook/outline) in the demo.
+
+### Figures
+
+The `figure.html` helper renders images as figures in the book.
+
+Parameters:
+- `url`: The relative URL to the image (appended to `site.baseurl`).
+- `caption`: An optional caption to render beneath the figure.
+- `class`: an optional `class` attribute to add to the the HTML `<figure>` tag.
+
+See an [example figure](https://jasongrimes.github.io/jekyll-chapterbook/helpers.html#figures) in the demo.
+
+### Theme variables
+
+The `chapter-vars.html` helper sets a number of variables related to chapters and parts
+which can be accessed in markdown files or Liquid templates.
+It can also render the variables for inspection, 
+to help with debugging.
+
+Parameters:
+- `id`: The `page.id` of the chapter page for which to set variables.
+- `slug`: The `page.slug` of the chapter page for which to set variables (ignored if `id` is passed).
+- `withnum`: For performance reasons, chapter and part numbers are not computed unless `withnum` is `true`. (To compute only chapter or only part numbers, set `withnum=part` or `withnum=chapter` instead.)
+- `inspect`: If true, render the variables to the page, for debugging.
+
+See [example chapter vars](https://jasongrimes.github.io/jekyll-chapterbook/variables.html) in the demo.
+
+## Wide tables
+
+Tables can be created using normal [GitHub-flavored markdown](https://github.github.com/gfm/#tables-extension-). 
+
+To prevent wide tables from breaking the book layout on mobile devices,
+wrap them in a `<div>` directly in the markdown file, 
+with `class="table-wrapper"` and the attribute `markdown="block"`.
+
+See an example of [mobile-friendly wide tables](https://jasongrimes.github.io/jekyll-chapterbook/wide-tables.html) in the demo.
+
+## References and citations
+
+See [example citations and references list](https://jasongrimes.github.io/jekyll-chapterbook/references.html) in the demo.
+
+## Extra CSS or javascript files
+
+You can add extra CSS or JavaScript references in `_config.yml`:
+
+- `extra_css`: for additional style sheets. If the url does not start with http, the path must be relative to the root of the site, without a starting `/`.
+- `extra_header_js`: for additional scripts to be included in the `<head>` tag, after the `extra_css` has been added. If the url does not start by http, the path must be relative to the root of the site, without a starting `/`.
+- `extra_footer_js`: for additional scripts to be included at the end of the HTML document, just before the site tracking script. If the url does not start by http, the path must be relative to the root of the site, without a starting `/`.
+
+## Customizing font settings
+
+The fonts can be customized by modifying the `.book.font-family-0` and `.book.font-family-1` entry in `./assets/gitbook/custom.css`.
+
+```css
+.book.font-family-0 {
+    font-family: Georgia, serif;
+}
+.book.font-family-1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+```
+
+
+## License
+
+Copyright &copy; 2023 Jason Grimes.
+
+This work is open source,
+made available under the [Apache License, Version 2.0](https://github.com/jasongrimes/jekyll-chapterbook/blob/master/LICENSE).
+
+Originally based on [jekyll-gitbook](https://github.com/sighingnow/jekyll-gitbook), 
+which was Copyright 2019 Tao He,
+and licensed under the [Apache License, Version 2.0](https://github.com/sighingnow/jekyll-gitbook/blob/f286e81abb57c91b7056d043d846cd308c8ea292/LICENSE).
+
+
