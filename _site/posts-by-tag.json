@@ -1,0 +1,324 @@
+
+
+[   
+      
+  {
+  "tag" : "artificial intelligence",
+  "posts" : [
+      
+      "./AI-and-intellectual-property.html",
+      
+      "./back-to-basics.html",
+      
+      "./deep-q-learning-tic-tac-toe.html"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "coding",
+  "posts" : [
+      
+      "./deep-q-learning-tic-tac-toe.html",
+      
+      "./neural-network-optimization-methods.html",
+      
+      "./ML-Library-from-scratch.html",
+      
+      "./conways-game-of-life.html",
+      
+      "./single-neuron-perceptron.html"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "copyright",
+  "posts" : [
+      
+      "./AI-and-intellectual-property.html"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "creativity",
+  "posts" : [
+      
+      "./AI-and-intellectual-property.html"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "deep Neural networks",
+  "posts" : [
+      
+      "./neural-network-optimization-methods.html"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "email",
+  "posts" : [
+      
+      "./email-address-format-php-filter-var-function-and-rfc-5321/"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "ephesus",
+  "posts" : [
+      
+      "./ephesus-jekyll-blog-theme/"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "filter_var",
+  "posts" : [
+      
+      "./email-address-format-php-filter-var-function-and-rfc-5321/"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "general blogging",
+  "posts" : [
+      
+      "./starting-the-adventure.html"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "ipsum",
+  "posts" : [
+      
+      "./ephesus-the-great-ancient-city/",
+      
+      "./elit-in-massa-parturient-a-class-condimentum-suspendisse/",
+      
+      "./binary-search-algorithm-c-programming-example/",
+      
+      "./posuere-sapien-orci-ipsum-dolor-parturient-eu-risus-in-orci/",
+      
+      "./vivamus-neque-nullam-ridiculus-posuere-placerat-parturient-ullamcorpernone/",
+      
+      "./iaculis-hendrerit-nunc-duis-a-per-convallis-ac-scelerisque-tempus-commodonone/",
+      
+      "./nisl-a-ultricies-mus-nisi-enimnone/",
+      
+      "./a-ultricies-class-sociosqu-elementum-a-dui-potentinone/",
+      
+      "./enim-ad-hendrerit-elementum-molestie-nibh-cursus-ullamcorper-sodales-sit-tortornone/",
+      
+      "./ante-facilisis-litora-parturient-a-suspendisse-consectetur-imperdiet-pulvinar-ultriciesnone/",
+      
+      "./lacus-consectetur-a-ultrices-aslienone/",
+      
+      "./mi-adipiscing-condimentum-malesuada-congue-enim-etnone/",
+      
+      "./enim-vehicula-fringilla-ullamcorper-leo-habitant/",
+      
+      "./integer-mi-sociis-et-scelerisque-at-disnone/",
+      
+      "./ante-fames-netus-vel-vestibulum-himenaeos-dolor-habitant-eu-quisnone/",
+      
+      "./curabitur-placerat-a-volutpat-magna-luctus-tempus-est-tortornone/",
+      
+      "./mauris-a-viverra-parturient-consecteturnone/",
+      
+      "./natoque-hac-euismod-diam-conubia-parturientnone/",
+      
+      "./mattis-pulvinar-nam-vivamus-magna-tempus-primis-habitassenone/",
+      
+      "./ullamcorper-convallis-a-placerat-consectetur-condimentumnone/",
+      
+      "./justo-imperdiet-condimentum-ad-cum-acanone/",
+      
+      "./metus-vestibulum-id-vehicula-a-gravida-venenatis-potenti-ut-vehiculanone/",
+      
+      "./aenean-lectus-consectetur/"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "jekyll",
+  "posts" : [
+      
+      "./ephesus-jekyll-blog-theme/"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "life",
+  "posts" : [
+      
+      "./starting-the-adventure.html"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "lorem",
+  "posts" : [
+      
+      "./ephesus-the-great-ancient-city/",
+      
+      "./elit-in-massa-parturient-a-class-condimentum-suspendisse/",
+      
+      "./binary-search-algorithm-c-programming-example/",
+      
+      "./posuere-sapien-orci-ipsum-dolor-parturient-eu-risus-in-orci/",
+      
+      "./vivamus-neque-nullam-ridiculus-posuere-placerat-parturient-ullamcorpernone/",
+      
+      "./iaculis-hendrerit-nunc-duis-a-per-convallis-ac-scelerisque-tempus-commodonone/",
+      
+      "./nisl-a-ultricies-mus-nisi-enimnone/",
+      
+      "./a-ultricies-class-sociosqu-elementum-a-dui-potentinone/",
+      
+      "./enim-ad-hendrerit-elementum-molestie-nibh-cursus-ullamcorper-sodales-sit-tortornone/",
+      
+      "./ante-facilisis-litora-parturient-a-suspendisse-consectetur-imperdiet-pulvinar-ultriciesnone/",
+      
+      "./lacus-consectetur-a-ultrices-aslienone/",
+      
+      "./mi-adipiscing-condimentum-malesuada-congue-enim-etnone/",
+      
+      "./enim-vehicula-fringilla-ullamcorper-leo-habitant/",
+      
+      "./integer-mi-sociis-et-scelerisque-at-disnone/",
+      
+      "./ante-fames-netus-vel-vestibulum-himenaeos-dolor-habitant-eu-quisnone/",
+      
+      "./curabitur-placerat-a-volutpat-magna-luctus-tempus-est-tortornone/",
+      
+      "./mauris-a-viverra-parturient-consecteturnone/",
+      
+      "./natoque-hac-euismod-diam-conubia-parturientnone/",
+      
+      "./mattis-pulvinar-nam-vivamus-magna-tempus-primis-habitassenone/",
+      
+      "./ullamcorper-convallis-a-placerat-consectetur-condimentumnone/",
+      
+      "./justo-imperdiet-condimentum-ad-cum-acanone/",
+      
+      "./metus-vestibulum-id-vehicula-a-gravida-venenatis-potenti-ut-vehiculanone/",
+      
+      "./aenean-lectus-consectetur/"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "machine learning",
+  "posts" : [
+      
+      "./AI-and-intellectual-property.html",
+      
+      "./back-to-basics.html",
+      
+      "./deep-q-learning-tic-tac-toe.html",
+      
+      "./neural-network-optimization-methods.html",
+      
+      "./ML-Library-from-scratch.html",
+      
+      "./single-neuron-perceptron.html"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "neural networks",
+  "posts" : [
+      
+      "./AI-and-intellectual-property.html",
+      
+      "./back-to-basics.html",
+      
+      "./ML-Library-from-scratch.html",
+      
+      "./single-neuron-perceptron.html"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "optimization",
+  "posts" : [
+      
+      "./neural-network-optimization-methods.html"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "php",
+  "posts" : [
+      
+      "./email-address-format-php-filter-var-function-and-rfc-5321/"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "python",
+  "posts" : [
+      
+      "./deep-q-learning-tic-tac-toe.html",
+      
+      "./ML-Library-from-scratch.html",
+      
+      "./conways-game-of-life.html"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "reinforcement learning",
+  "posts" : [
+      
+      "./deep-q-learning-tic-tac-toe.html"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "thoughts",
+  "posts" : [
+      
+      "./starting-the-adventure.html"
+      
+    ]
+  } 
+    
+]
