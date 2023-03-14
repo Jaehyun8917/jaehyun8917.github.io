@@ -3,7 +3,7 @@ remote_theme: jasongrimes/jekyll-chapterbook
 # Configurations
 title:            Jaehyunlog
 longtitle:        개발 일지
-author:           Jaehyun
+author:           Jaehyun Lee
 email:            danel8917@naver.com
 description: >
   A Jekyll theme based on GitBook with support for chapters and parts.
@@ -26,7 +26,7 @@ favicon_path: /assets/gitbook/images/favicon.ico
 
 # Links shown above the TOC in the sidebar
 sidebar_nav_top:
-- label: About this theme
+- label: 블로그 소개
   url: /
 
 # Links shown below the TOC in the sidebar
@@ -68,7 +68,7 @@ sidebar_toc:
 # Show a link to edit each page on GitHub
 github_edit:
   enabled: true
-  base_url: https://github.com/Jaehyun8917/jaehyun8917.github.io.git
+  base_url: https://github.com/Jaehyun8917/jaehyun8917.github.io.git.
 
 # Custom CSS
 extra_css:
