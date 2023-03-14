@@ -68,7 +68,7 @@ sidebar_toc:
 # Show a link to edit each page on GitHub
 github_edit:
   enabled: true
-  base_url: https://github.com/Jaehyun8917/jaehyun8917.github.io.git.
+  base_url: https://github.com/Jaehyun8917/jaehyun8917.github.io/edit/main
 
 # Custom CSS
 extra_css:
