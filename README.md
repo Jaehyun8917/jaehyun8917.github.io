@@ -7,7 +7,7 @@ permalink: /
 인천대학교 정보통신공학과 이재현의 블로그입니다.
 
 바로가기\
-*[Github]*(https://github.com/Jaehyun8917/jaehyun8917.github.io)
+[Github](https://github.com/Jaehyun8917/jaehyun8917.github.io)
 
 
 이것은 테스트를 위한 글입니다.
@@ -18,10 +18,10 @@ permalink: /
 
 *Phone*\
 +82 10-3831-8917\
-Email\
+*Email*\
 danel8917@inu.ac.kr\
-KakaoTalk\
-danel8917\
+*KakaoTalk*\
+danel8917
 * * *
 ## Why this theme
 
