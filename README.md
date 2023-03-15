@@ -4,32 +4,25 @@ title: JAEHYUNLOG
 permalink: /
 ---
 
-인천대학교 정보통신공학과 이재현의 블로그입니다.\
+인천대학교 정보통신공학과 이재현의 블로그입니다.
 
 바로가기\
-<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
-[Github](https://github.com/Jaehyun8917/jaehyun8917.github.io)\
+*[Github]*(https://github.com/Jaehyun8917/jaehyun8917.github.io)
 
 
 이것은 테스트를 위한 글입니다.
 
 ## Homework
 
-### 링크
+### Contact
 
-[Naver.com](https://naver.com)
-
-그리고 유튜브 
-[Youtube](https://youtube.com)
-
-### Example live site
-
-A live site with a more complex configuration can be seen at 
-[fretboardfoundation.com](https://fretboardfoundation.com).
-
-Also see its 
-[GitHub repo](https://github.com/jasongrimes/fretboardfoundation).
-
+*Phone*
++82 10-3831-8917
+Email
+danel8917@inu.ac.kr
+KakaoTalk
+danel8917
+* * *
 ## Why this theme
 
 This theme is intended to help with gradually writing a book over a long period of time,
