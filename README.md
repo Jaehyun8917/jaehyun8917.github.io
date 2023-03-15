@@ -16,12 +16,12 @@ permalink: /
 
 ### Contact
 
-*Phone*
-+82 10-3831-8917
-Email
-danel8917@inu.ac.kr
-KakaoTalk
-danel8917
+*Phone*\
++82 10-3831-8917\
+Email\
+danel8917@inu.ac.kr\
+KakaoTalk\
+danel8917\
 * * *
 ## Why this theme
 
