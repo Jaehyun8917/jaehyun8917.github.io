@@ -1,10 +1,10 @@
 ---
-bg: "tag.jpg"
+bg: "tea.jpg"
 layout: page
 permalink: /posts/
 title: "Archive"
-crawlertitle: "All articles"
-summary: "Posts about jekyll"
+crawlertitle: "JAEHYUNLOG : Articles"
+summary: "Post"
 active: archive
 ---
 
@@ -20,10 +20,10 @@ active: archive
         <li>
           {% if post.lastmod %}
             <a href="{{ post.url | relative_url}}">{{ post.title }}</a>
-            <span class="date">{{ post.lastmod | date: "%d-%m-%Y"  }}</span>
+            <span class="date">{{ post.lastmod | date: "%Y-%m-%d"  }}</span>
           {% else %}
             <a href="{{ post.url | relative_url}}">{{ post.title }}</a>
-            <span class="date">{{ post.date | date: "%d-%m-%Y"  }}</span>
+            <span class="date">{{ post.date | date: "%Y-%m-%d"  }}</span>
           {% endif %}
         </li>
       {% endif %}

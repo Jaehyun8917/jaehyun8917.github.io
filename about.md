@@ -1,19 +1,18 @@
 ---
-bg: "owl.jpg"
+bg: "kyoto.jpg"
 layout: page
 title: "About"
-crawlertitle: "Why and how this blog was created"
+crawlertitle: "JAEHYUNLOG : About"
 permalink: /about/
 summary: "About this blog"
 active: about
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+인천대학교 정보통신공학과 이재현의 개인 블로그입니다. 개발자가 되기 위한 과정들을 담고 있습니다. 매일 매일 공부중인 것이나 개인적인 생각 등이 업로드 됩니다.
+ [Instagram](https://www.instagram.com/jaehyunlog/)
+ [Youtube](https://www.youtube.com/@jaehyunlog)
 
-You can find the source code for the Jekyll new theme at:
-{{site.twitter_username}} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
 
-You can find the source code for Jekyll at
+깃허브 주소로 이동하여 코드를 확인하실 수 있습니다!
 {{site.github_username}} /
-[jekyll](https://github.com/jekyll/jekyll)
+[Github](https://github.com/Jaehyun8917/jaehyun8917.github.io)
