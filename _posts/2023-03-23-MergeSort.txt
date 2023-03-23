@@ -1,0 +1,70 @@
+---
+bg: "code.jpg"
+layout: post
+title:  "Merge Sort in Java"
+crawlertitle: "JAEHYUNLOG"
+summary: "컴퓨터알고리즘 3주차"
+date:   2023-03-23 19:17:00
+categories: posts
+tags: 'Algorithm'
+author: Jaehyun
+---
+# Merge Sort
+
+Merge Sort (병합/합병 정렬) 을 사용하는 이유
+: Merge Sort는 Binary Tree의 형태로 쪼개기 때문에 최대 깊이는 log n이 된다.
+이때, 각 분할별로 합병을 진행하기 때문에 총 시간복잡도는 O(nlogn)이 된다.
+
+Merge Sort의 코드는 다음과 같다.
+* * *
+
+```
+public class Main {
+    public static int[] A;
+    public static int[] tmp;
+    public static void main(String[] args){
+        A = new int[]{37, 10, 22, 30, 35, 13, 25, 24};
+        tmp = new int[A.length];
+        PrintArray(A);
+        MergeSort(0, A.length-1);
+        PrintArray(A);
+
+    }
+
+    public static void MergeSort(int start, int end) {
+        if (start<end) {
+            int mid = (start+end)/2;
+            MergeSort(start, mid);
+            MergeSort(mid+1, end);
+
+            int p = start;
+            int q = mid + 1;
+            int index = p;
+
+            while (p<=mid || q<=end) {
+                if (q>end || (p<=mid && A[p]<A[q])) {
+                    tmp[index++] = A[p++];
+                }
+                else tmp[index++] = A[q++];
+            }
+            for (int i=start; i<=end; i++) {
+                A[i] = tmp[i];
+            }
+        }
+    }
+
+    public static void PrintArray(int[] a) {
+        for (int i=0; i<a.length; i++){
+            System.out.print(a[i]+" ");}
+        System.out.println();
+    }
+}
+```
+
+`실행 결과
+
+37 10 22 30 35 13 25 24 
+
+10 13 22 24 25 30 35 37
+`
+* * *
